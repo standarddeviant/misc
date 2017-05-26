@@ -32,8 +32,23 @@ These are some links from the many Pycon 2017 youtube videos that I found intere
 * [Interesting overview of python's async vs. os's threads/processes](https://www.youtube.com/watch?v=iG6fr81xHKA)
 * [How-To-Use for async/await](https://www.youtube.com/watch?v=2ZFFv-wZ8_g)
 
-## 
-
+## Statistics
+* [Probablistic Programming, PyMC3 for Monte Carlo Simulations](https://www.youtube.com/watch?v=5TyvJ6jXHYE)
+  * Bayes is useful due to its simplicity
+  * Probabilistic Programming in 3 steps
+    1. Encode a probabilities model
+      * Specify your "priors" distribution or thing that models uncertainty: normal, beta, lognormal, etc.
+      * Specify likelihood function, i.e. "data generating mechanism" or "how we update our prior probability"
+      	* Again, could be normal, binomial, poisson
+    2. Infer Values
+      * Requires integration of $y$ over all parameters, and for many (100s or 1,000s)  variables, we need numerical methods
+      * Probabilistic Programming abstracts the numerical methods, consider it a "black box"
+    3. Check your model
+      * Simulate data from your model, and plot them against histograms of observed data
+    * Not new, WinBUGS was used in the 90s, but written in Objective Pascal...
+    * PyMC3 uses theano with gradients for tensors
+    
+    
 
 
 
